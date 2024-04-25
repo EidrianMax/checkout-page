@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --orange: #f2994a;
+  --black-800: #4e5150;
+  --black-900: #333333;
+  --gray-100: #f2f2f2;
+  --gray-200: #e0e0e0;
+  --gray-300: #bdbdbd;
+  --gray-400: #828282;
+  --font: 'Montserrat', sans-serif;
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--black-800);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+main h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.page-cart {
+  margin-bottom: 3rem;
+}
+
+.page-main {
+  margin-bottom: 5rem;
+}
+
+/* Components */
+/* cart */
+.cart {
+  padding: 1.75rem;
+  background-color: var(--gray-100);
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.cart-price {
+  border-top: 1px solid var(--gray-300);
+  padding-block: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-price-name,
+.cart-price-value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--black-900);
+}
+
+/* product */
+.product {
+  display: flex;
+  gap: 1rem;
+}
+
+.product-photo {
+  flex-basis: 125px;
+  flex-shrink: 0;
+}
+
+.product-photo img {
+  border-radius: 0.75rem;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.product-body {
+  flex-grow: 1;
+}
+
+.product-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--black-800);
+}
+
+.product-price {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--orange);
+  margin-right: 0.5rem;
+}
+
+.product-old-price {
+  font-size: 0.625rem;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.product-buttons {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 0.75rem;
+}
+
+.product-buttons button {
+  font: inherit;
+  border: 0;
+  cursor: pointer;
+  background-color: var(--gray-200);
+  border-radius: 0.5rem;
+  color: var(--gray-400);
+  font-weight: 600;
+  padding: 0 0.4rem;
+}
+
+.product-count {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black-800);
+}
+
+/* form */
+.form-section {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-section + .form-section {
+  margin-top: 2rem;
+}
+
+.form-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--black-900);
+  margin-bottom: 0.5rem;
+}
+
+.form-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  margin-bottom: 0.5rem;
+}
+
+.form-label {
+  margin-bottom: 0.25rem;
+}
+
+.form-input {
+  margin-bottom: 0.5rem;
+}
+
+.form-check {
+  margin-bottom: 0.5rem;
+}
+
+.form-btn {
+  text-align: right;
+}
+
+/* label */
+.label {
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+/* input */
+.input {
+  --background-image: url(./assets/mail.svg);
+  display: block;
+  width: 100%;
+  padding-block: 1.25em;
+  padding-left: 2.7em;
+  border: 1px solid var(--gray-400);
+  border-radius: 0.75rem;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1;
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  background-position: left 0.6em center;
+}
+
+.input::placeholder {
+  color: var(--gray-400);
+}
+
+.input-mail {
+  --background-image: url(./assets/mail.svg);
+}
+
+.input-phone {
+  --background-image: url(./assets/phone.svg);
+}
+
+.input-name {
+  --background-image: url(./assets/account-circle.svg);
+}
+
+.input-address {
+  --background-image: url(./assets/city.svg);
+}
+
+.input-postal-code {
+  --background-image: url(./assets/mailbox.svg);
+}
+
+/* select */
+.select {
+  --background-image: url(./assets/mail.svg);
+  display: block;
+  width: 100%;
+  padding-block: 1.15em;
+  padding-left: 2.7em;
+  border: 1px solid var(--gray-400);
+  border-radius: 0.75rem;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: var(--gray-400);
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  background-position: left 0.6em center;
+}
+
+/* check */
+.check {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.check-input {
+  margin: 0;
+}
+
+.check-label {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+/* btn */
+.btn {
+  font: inherit;
+  border: 0;
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  background-color: var(--orange);
+  color: var(--gray-100);
+  transition: 0.25s all ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* footer */
+.footer {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--gray-300);
+}
+
+.footer-username-link {
+  color: inherit;
+  font-weight: 700;
+}
+
+.footer-oficial-page {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    align-items: start;
+  }
+
+  .grid > * {
+    margin: 0;
+  }
+
+  .grid .cart {
+    order: 1;
+  }
+
+  main h1 {
+    font-size: 2.25rem;
+  }
+
+  .form-title {
+    font-size: 1.25rem;
+  }
+
+  .form-label {
+    font-size: 0.75rem;
+  }
+
+  .input {
+    font-size: 0.9rem;
+  }
+
+  select {
+    font-size: 0.9rem;
+  }
+
+  .form-check-label {
+    font-size: 0.75rem;
+  }
+}

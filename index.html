@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./devchallenges.png" type="image/png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="page-main">
+        <h1>Checkout</h1>
+
+        <div class="grid">
+          <div class="cart page-cart">
+            <div class="product">
+              <div class="product-photo">
+                <img src="./assets/photo1.png" alt="Vintage Bakcbag" />
+              </div>
+
+              <div class="product-body">
+                <p class="product-name">Vintage Bakcbag</p>
+
+                <p class="product-prices">
+                  <span class="product-price">$54.99</span>
+                  <s class="product-old-price">$94.99</s>
+                </p>
+
+                <div class="product-buttons">
+                  <button>‒</button>
+                  <span class="product-count">1</span>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-photo">
+                <img src="./assets/photo2.png" alt="Levis Shoes" />
+              </div>
+
+              <div class="product-body">
+                <p class="product-name">Levis Shoes</p>
+
+                <p class="product-prices">
+                  <span class="product-price">$74.99</span>
+                  <s class="product-old-price">$124.99</s>
+                </p>
+
+                <div class="product-buttons">
+                  <button>‒</button>
+                  <span class="product-count">1</span>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-footer">
+              <div class="cart-price">
+                <span class="cart-price-name">Shipping</span>
+                <span class="cart-price-value">$19</span>
+              </div>
+
+              <div class="cart-price">
+                <span class="cart-price-name">Total</span>
+                <span class="cart-price-value">$148.98</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="form page-form">
+            <fieldset class="form-section">
+              <legend class="form-title">Contact information</legend>
+
+              <label class="label form-label" for="email">E-mail</label>
+              <input
+                class="input input-mail form-input"
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+              />
+
+              <label class="label" for="phone">Phone</label>
+              <input
+                class="input input-phone form-input"
+                id="phone"
+                type="tel"
+                placeholder="Enter your phone"
+              />
+            </fieldset>
+
+            <fieldset class="form-section">
+              <legend class="form-title">Shipping Addres</legend>
+
+              <label class="label" for="name">Full name</label>
+              <input
+                class="input input-name form-input"
+                id="name"
+                type="text"
+                placeholder="Enter your name"
+              />
+
+              <label class="label" for="address">Address</label>
+              <input
+                class="input input-address form-input"
+                id="address"
+                type="text"
+                placeholder="Your address"
+              />
+
+              <label class="label" for="city">City</label>
+              <input class="input input-address form-input" type="text" placeholder="Your city" />
+
+              <div class="form-wrapper">
+                <div>
+                  <label class="label form-label" for="countries">Country</label>
+                  <select class="select form-input" id="countries">
+                    <option selected disabled>Your country</option>
+                    <option value="ecuador">Ecuador</option>
+                    <option value="españa">España</option>
+                    <option value="francia">Francia</option>
+                    <option value="alemania">Alemania</option>
+                    <option value="japon">Japon</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="label form-label" for="city">Postal code</label>
+                  <input
+                    class="input input-postal-code form-input"
+                    type="text"
+                    placeholder="Your city"
+                  />
+                </div>
+              </div>
+
+              <div class="check form-check">
+                <input class="check-input" id="save-form-info" type="checkbox" />
+                <label class="check-label" for="save-form-info">
+                  Save this information for next time
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-btn">
+              <button class="btn">Continue</button>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <footer class="footer page-footer">
+        <p>
+          created by
+          <a
+            class="footer-username-link"
+            href="https://legacy.devchallenges.io/portfolio/EidrianMax"
+          >
+            EidrianMax
+          </a>
+          -
+          <a class="footer-oficial-page" href="https://devchallenges.io/">devChallenges.io</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
